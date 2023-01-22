@@ -6,5 +6,7 @@ $(function () {
     
     $("#amarillo").css("background", "yellow").css("color","red"); // aqui hacemos lo mismo pero sin necesidad de almacenar en una variable
     $("#verde").css("background", "green").css("color","white");
+    //selector de clase
+    $()
     //selector por nombre $("tag["name='value']")
 })
