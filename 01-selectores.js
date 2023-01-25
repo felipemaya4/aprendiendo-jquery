@@ -33,5 +33,7 @@ $(document).ready(function () {
                     .removeClass('grande');
         }
     });
-    //selector por nombre $("tag["name='value']")
+    //selector por atributo
+    $('[title="Google"]').css('background', 'skyblue'); // con este ejemplo podemos observar como selecionar etiquetas segun los atributos que tengan por ejemplo una etiqueta <a> con el atributo title="Google"
+    $('[title="Facebook"]').css('background', 'greenyellow');// mismo ejemplo pero con title="facebook"
 })
