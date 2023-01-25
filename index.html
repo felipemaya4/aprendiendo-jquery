@@ -5,14 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>aprendiendo jquery</title>
+    <style>
+        .zebra{
+            border: 5px dashed black;
+        }
+
+        .grande{
+            font-size: 30px;
+        }
+        
+    </style>
     <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="01-selectores.js"></script>
 </head>
 <body>
     <h1>Aprendiendo jquery</h1>
-    <p>Ejercicios de jquery</p>
-    <p id="rojo" >ejercicios de jquery</p>
-    <p id="amarillo" > practicando selectores</p>
-    <p id="verde" >quiero ser un parrafo verde</p>
+    <p  id="rojo" class="sin_borde">Ejercicios de jquery</p>
+    <p id="amarillo" class="zebra"> practicando selectores</p>
+    <p id="verde" class="sin_borde">quiero ser un parrafo verde</p>
+    <p >otro parrafo blanco</p>
+    <p class="zebra" >josue maya valencia</p>
 </body>
 </html>
