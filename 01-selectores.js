@@ -36,4 +36,13 @@ $(document).ready(function () {
     //selector por atributo
     $('[title="Google"]').css('background', 'skyblue'); // con este ejemplo podemos observar como selecionar etiquetas segun los atributos que tengan por ejemplo una etiqueta <a> con el atributo title="Google"
     $('[title="Facebook"]').css('background', 'greenyellow');// mismo ejemplo pero con title="facebook"
+
+    //otros tipos de sectores
+    //$('p, a').addClass('margen-sup');
+
+    let busqueda = $('#caja').find('.resaltado'); // con fin podemos buscar tiquetas que estan dentro del padre con id caja que tengan como  clase resaltado
+    console.log("busqueda ",busqueda.length,busqueda);
+    // con el metodo parent() de jQuery podemos subir de nivel en el anidamiento de las etiquetas
+    let buscarAfuera = $('#elemento2').eq(0).parent().parent().parent().find('[title="Google"]'); // en este caso se pretende sin salir de la etiqueta <li.resaltado> de <div#caja>, buscar una etiqueta que tenga como atributo tittle="Goolge"
+    console.log("buscarAfuera ", buscarAfuera);
 })

@@ -17,6 +17,13 @@
         .josue{
             background: greenyellow;
         }
+        .margen-sup{
+            display: block;
+            margin-top: 40px;
+        }
+        .resaltado{
+            border-bottom: 2px solid green;
+        }
         
     </style>
     <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
@@ -26,7 +33,7 @@
     <h1>Aprendiendo jquery</h1>
 
     <ul>
-        <li><a href="https://www.google.com" title="Google">Ir a Google</a></li>
+        <li><a href="https://www.google.com" title="Google" id="google">Ir a Google</a></li>
         <li><a href="https://twitter.com" title="Facebook">Ir a Tiwtter</a></li>
         <li><a href="https://www.facebook.com">Ir a Facebook</a></li>
     </ul>
@@ -36,5 +43,15 @@
     <p id="verde" class="sin_borde">quiero ser un parrafo verde</p>
     <p >otro parrafo blanco</p>
     <p class="zebra josue" >josue maya valencia</p>
+
+    <div id="caja">
+        <p>hola soy una caja</p>
+        <ul>
+            <li>Elemento 1</li>
+            <li id="elemento2" class="resaltado">Elemento 2</li>
+        </ul>
+        <span class="resaltado">soy un span </span>
+    </div>
+    
 </body>
 </html>
