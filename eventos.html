@@ -13,17 +13,53 @@
             border: 2px solid black;
             background: yellow;
             transition: 300ms all;
+            margin-top: 10px;
         }
         /*
         #caja:hover{
             background: red;
             cursor: pointer;
         }*/
+
+        input{
+            padding: 10px;
+            width: 300px;
+            font-size: 20px;
+            
+        }
+
+        #datos{
+            border: 4px dashed black;
+            padding: 10px;
+            width: 250px;
+            height: 50px;
+            margin-top: 10px;
+            display: none;
+        }
+
+        #sigueme{
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            display: block;
+            background: darkblue;
+            opacity: 0.5;
+            border-radius: 100%;
+        }
     </style>
     <title>manejo de eventos con jquery</title>
 </head>
 <body>
     <h1>Aprendiendo eventos con jquery </h1>
+    <div id="sigueme">
+
+    </div>
+    <form>
+        <input type="text" id="nombre">
+    </form>
+    <div id="datos">
+
+    </div>
     <div id="caja">
         soy una caja
     </div>
