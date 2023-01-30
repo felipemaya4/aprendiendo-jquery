@@ -72,5 +72,5 @@ $(document).ready(function(){
         sigueme.css("left", event.clientX) // le asignamos la ubicacion al elemento sigueme
                .css("top", event.clientY);
     })
-
+    
 })
