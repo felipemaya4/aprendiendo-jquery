@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo ajax</title>
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="05-ajax.js" type="text/javascript"></script>
+    <style>
+        #datos{
+            border: 2px solid gray;
+            width: 250px;
+            height: 250px;
+            overflow: scroll;
+            resize: both;
+        }
+        #datos:hover{
+            border: 2px solid green;
+        }
+        input:hover{
+            border: 2px solid skyblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendiendo jQuery - Ajax</h1>
+
+    <form action="https://reqres.in/api/users" method="post" id="form1">
+        <label for="name">Nombre: </label><input type="text" id="name">
+        <label for="web">Web: </label><input type="text" id="web">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <p id="response"></p>
+
+    <div id="datos">
+
+    </div>
+</body>
+</html>
