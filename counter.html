@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contador</title>
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="counter.js"></script>
+    <style>
+        *{
+            text-align: center;
+            align-content: center;
+        }
+        #container{
+            height: 250px;
+            width: 300px;
+            border: 2px solid black;;
+        }
+        #view{
+            height: 50px;
+            width: 280px;
+            font-size: 40px;
+            margin: 10px;
+        }
+        #botones{
+            margin-top: 50px;
+        }
+        input{
+            height:50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container" >
+        <h3>COUNTER</h3>
+        <p id="view">0</p>
+        <div id="botones"  >
+            <input type="button" id="increment" value="INCREMENT">
+            <input type="button" id="reset"  value="RESET">
+            <input type="button" id="decrement"  value="DECREMENT">
+        </div>
+    </div>
+    
+</body>
+</html>
