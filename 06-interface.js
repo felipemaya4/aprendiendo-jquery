@@ -29,11 +29,25 @@ $(document).ready(function () {
 
    $("#mostrar").click(function(){ // capturamos el evento y le cambiamoslas propiedades de la class .caja-efectos para wue el div aperezca en pantalla 
 
-    $(".caja-efectos").toggle("shake",4000);// aca escogemos que tipo de transicion grafica parahacer aparecer y desaparecer el elemento con esa clasess
+    $(".caja-efectos").toggle("blind",1000);// aca escogemos que tipo de transicion grafica parahacer aparecer y desaparecer el elemento con esa clasess
     
    })
 
+   //tooltip
 
+   $(document).tooltip() // este metod onos permite mostrar el atributo title de los elementos de la pagina con un formta  configurable
 
+   //dialog
+   
+   $("#lanzaDialog").click(function () {
+    $("#popup").dialog() // con este metodo podemos mostrar cuadro de dialogo en la pagina, en este caso esta configurado para dalir cuando suceda el ecento click en el boton con id lanzaDialog
+   })
+   // date picker
+
+   $("#calendario").datepicker() // metodo para poder mostrar caledarios para que el usurio ingrese su fecha 
+
+   //tabs o pestañas en la pagina 
+
+   $("#pestanas").tabs(); // si necesitamos crear pestañas con este metodo lo podemos hacer 
 
 })
